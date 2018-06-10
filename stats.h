@@ -31,7 +31,6 @@
 *   @return no return value.
 */
 void print_array(unsigned char array[]);
-//void print_array(unsigned char array[], unsigned int len);
 
 
 /**
@@ -57,7 +56,6 @@ void swap(unsigned char *a, unsigned char *b);
 *   @return no return value.
 */
 void sort_array(unsigned char array[]);
-//void sort_array(unsigned char array[], unsigned int len);
 
 
 /**
@@ -71,7 +69,6 @@ void sort_array(unsigned char array[]);
 *   @return unsigned char highest or maximum value in the array.
 */
 unsigned char find_maximum(unsigned char array[]);
-//unsigned char find_maximum(unsigned char array[], unsigned int len);
 
 
 /**
@@ -98,7 +95,6 @@ unsigned char find_minimum(unsigned char array[]);
 *   @return integer The mean/average of the array
 */
 unsigned int find_mean(unsigned char array[]);
-//unsigned int find_mean(unsigned char array[], unsigned int len);
 
 
 /**

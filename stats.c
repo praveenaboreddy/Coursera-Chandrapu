@@ -29,7 +29,7 @@
 
 void main() {
 
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
+unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
@@ -91,14 +91,12 @@ void sort_array(unsigned char array[]){
 
 /* To print the maximum element in the array */
 unsigned char find_maximum(unsigned char array[]){
-//unsigned char find_maximum(unsigned char array[],unsigned int SIZE){
 	sort_array(array);
 	return (array[SIZE-1]);
 }
 
 /* To print the minimum element in the array */
 unsigned char find_minimum(unsigned char array[]){
-//unsigned char find_minimum(unsigned char array[], unsigned int SIZE){
 	sort_array(array);
 	return (array[0]);
 }
@@ -135,7 +133,6 @@ return median;
 }
   
 void print_statistics(unsigned char array[])
-//void print_statistics(unsigned char array[], unsigned int SIZE)
 {
 
 unsigned char max_valueOfArray, min_valueOfArray;
