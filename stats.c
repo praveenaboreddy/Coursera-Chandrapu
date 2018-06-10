@@ -39,31 +39,27 @@ void main() {
 unsigned char max_valueOfArray, min_valueOfArray;
 unsigned int mean, median;
 
-
-print_array(test);  //To print the array
-
+//To print the array
+print_array(test); 
+//TO print the statistics
 print_statistics(test);
-
-sort_array(test);   //To sort the array in descending order
-
-max_valueOfArray = find_maximum(test);    //To find the maximum element in the array
+//To sort the array in descending order
+sort_array(test);   
+//To find the maximum element in the array
+max_valueOfArray = find_maximum(test);    
 printf("\n\nThe MAXIMUM Value in the Array is = %c\n\n", max_valueOfArray);
-
-min_valueOfArray = find_minimum(test);    //To find the minimum element in the array
+/To find the minimum element in the array
+min_valueOfArray = find_minimum(test);    
 printf("\n\nThe MINIMUM Value in the Array is =  %c \n\n", min_valueOfArray);
-
-mean = find_mean(test);   // To find the mean of the array
+// To find the mean of the array
+mean = find_mean(test);   
 printf("\n\nMEAN of the Array = %d \n\n", mean);
 
-/*median = find_median(test);  //To find the median of the array
-printf("\n\nMEDIAN Of The Array is = %d\n\n", median);
-*/
 
 }
 
 //Sub-routine to print the array
 void print_array(unsigned char array[]) {
-//void print_array(unsigned char array[], SIZE) {
 	unsigned int i;
 	//To print the array
         printf("****************Printing the elements in the unsigned char array below****************\n");
@@ -81,7 +77,6 @@ void swap(unsigned char *a, unsigned char *b){
 
 //Sub-routine to sort the given array
 void sort_array(unsigned char array[]){
-//void sort_array(unsigned char array[], SIZE){
 	unsigned int i,j;
 	for(i=0;i<SIZE-1;i++){
 		for(j=0;j<SIZE-i-1;j++){
@@ -102,7 +97,6 @@ unsigned char find_maximum(unsigned char array[]){
 }
 
 /* To print the minimum element in the array */
-
 unsigned char find_minimum(unsigned char array[]){
 //unsigned char find_minimum(unsigned char array[], unsigned int SIZE){
 	sort_array(array);

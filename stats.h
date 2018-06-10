@@ -85,7 +85,6 @@ unsigned char find_maximum(unsigned char array[]);
 *   @return unsigned char lowest or minimum value in the array.
 */
 unsigned char find_minimum(unsigned char array[]);
-//unsigned char find_minimum(unsigned char array[], unsigned int len);
 
 
 /**
@@ -114,7 +113,6 @@ unsigned int find_mean(unsigned char array[]);
 *   @return integer The median of the array
 */
 unsigned int find_median(unsigned char array[]);
-//unsigned int find_median(unsigned char array[], unsigned int len);
 
 
 /**
@@ -128,7 +126,6 @@ unsigned int find_median(unsigned char array[]);
 *       @return no return value
 */
 void print_statistics(unsigned char array[]);
-//void print_statistics(unsigned char array[], unsigned int len);
 
 
 #endif /* __STATS_H__ */
