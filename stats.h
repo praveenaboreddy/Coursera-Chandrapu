@@ -23,21 +23,19 @@
 /**
 *	@brief Prints the unsigned char array with its index and values explicitly
 *
-*	This function takes inputs as an unsigned char array and an integer which indicates the array size
+*	This function takes inputs as an unsigned char pointer array 
 *	This will print all the elements in the array based on the size of the array
 *
-* 	@param array The unsigned char array
-*	@param integer The integer to tell the size of the array
+* 	@param array The unsigned char pointer array
 *   @return no return value.
 */
-void print_array(unsigned char array[]);
-//void print_array(unsigned char array[], unsigned int len);
+void print_array(unsigned char *array);
 
 
 /**
 *	@brief Swaps or interchanges the two char values passed as arguments.
 *
-*	This function takes inputs as two unsigned char values 
+*	This function takes input as two unsigned char values 
 *	This will swap the two char values
 *
 * 	@param  two unsigned char pointers, eg; a, b
@@ -57,7 +55,6 @@ void swap(unsigned char *a, unsigned char *b);
 *   @return no return value.
 */
 void sort_array(unsigned char array[]);
-//void sort_array(unsigned char array[], unsigned int len);
 
 
 /**
@@ -71,7 +68,6 @@ void sort_array(unsigned char array[]);
 *   @return unsigned char highest or maximum value in the array.
 */
 unsigned char find_maximum(unsigned char array[]);
-//unsigned char find_maximum(unsigned char array[], unsigned int len);
 
 
 /**
@@ -98,7 +94,6 @@ unsigned char find_minimum(unsigned char array[]);
 *   @return integer The mean/average of the array
 */
 unsigned int find_mean(unsigned char array[]);
-//unsigned int find_mean(unsigned char array[], unsigned int len);
 
 
 /**
