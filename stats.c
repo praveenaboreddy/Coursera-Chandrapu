@@ -4,9 +4,7 @@
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
- * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
- *
+ * software. 
  *****************************************************************************/
 /**
  * @file <stats.c> 
@@ -40,7 +38,7 @@ unsigned char max_valueOfArray, min_valueOfArray;
 unsigned int mean, median;
 
 
-	print_array(test); //To print the array
+	print_array(test); //To print the given array
 	
 
 	print_statistics(test);	//TO print the statistics
@@ -72,13 +70,16 @@ void sort_array(unsigned char array[]){
 		for(j=i+1;j<SIZE;j++){
 			if(*(array+i) < *(array+j)){
 			swap(&array[i],&array[j]);
-			printf("%c=",array[i]);
+			//printf("%u=",array[i]);
 		}
 		}
 	}
-	/*printf("\n*************After sorting the array*************\n");
 	
-	print_array(array);*/
+	printf("\n***********************  Displaying The sorted elements in the array  *************************\n\n" );
+	for(i=0;i<SIZE;i++)
+	printf("%u\t\t",array[i]);
+	
+
 	
 }
 
@@ -102,7 +103,6 @@ unsigned int find_mean(unsigned char array[]){
 	{
 		temp=(int)array[i];
 		total=total+temp;
-		printf("array is %d\n",temp);
 	}
 	
 	mean=total/SIZE;
@@ -115,7 +115,6 @@ unsigned int find_mean(unsigned char array[]){
 unsigned int find_median(unsigned char array[]) {
 	 unsigned int median;
 
-	//sort_array(array);
 	
 	if(SIZE%2==0) 
 	{
@@ -138,24 +137,28 @@ unsigned int mean, median;
 
 /* Printing the statistics of the array */
 
-
+	/*------------- To print the sorted array-------------*/
 	sort_array(array); 
-	printf("\n*************After sorting the array*************\n");
-	print_array(array);
 
+	/*------------- To find the mean of the array-------------*/
 	
-	mean = find_mean(array);   // To find the mean of the array
-	printf("MEAN of the Array = %d \n\n", mean);
+	mean = find_mean(array);   			
+	printf("\n\nMEAN of the Array = %d \n\n", mean);
 
-	median = find_median(array);  //To find the median of the array
+	/*-------------To find the median of the array-------------*/
+	
+	median = find_median(array);  			
 	printf("MEDIAN Of The Array is = %d\n\n", median);
 
-	max_valueOfArray = find_maximum(array);    //To find the maximum element in the array
-	printf("The MAXIMUM Value in the Array is = %u\n", max_valueOfArray);
+	/*-------------To find the maximum element in the array-------------*/
+	
+	max_valueOfArray = find_maximum(array);    	
+	printf("The MAXIMUM Value in the Array is = %u\n\n", max_valueOfArray);
 
-	min_valueOfArray = find_minimum(array);    //To find the minimum element in the array
+	/*-------------To find the minimum element in the array-------------*/
+	
+	min_valueOfArray = find_minimum(array);    	
 	printf("The MINIMUM Value in the Array is =  %u \n\n", min_valueOfArray);
-
 
 }
 
